@@ -1,4 +1,5 @@
 import React from 'react';
+// import './Videos.scss';
 
 export default function NextVideos () {
     const nextVideosData = [
@@ -71,7 +72,7 @@ function Videos(props) {
             <h3 className="next__video__header"> {props.video.title}</h3>
             <p>{props.video.channel}</p>
          </div>
-        <span> Is Rated R?{props.isRatedR}</span>
+        {/* <span> Is Rated R?{props.isRatedR}</span> */}
      </div>
 
 
