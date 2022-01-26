@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import './components/Component/Comments';
-import './components/Component/CommentsList';
+import Comments from './components/Component/Comments'
+import NextVideos from './components/Component/Videos'
+// import './components/Component/CommentsList';
 import './App.scss';
-// import './assets/Images';
 
 
 export default function App () {
@@ -14,30 +14,30 @@ export default function App () {
 
   return (
     <div className = "App">
-
       <div className="video__main">
-        <h1>Main Video</h1>
-      
+        <h1>Main Video</h1>     
       </div>
       <div className= "description">
         <h1>BMX Rampage: 2021 Highlights</h1>
         <h3>By Red Crow</h3>
         <h4>07/11/2021</h4>
-        <p>On a gustly day in Southerin Utah, a group of 25 daring mountain bikers blew the doors off what is possible on two wheels, unleashing some of the biggest moments the spot has ever seen. While mother nature only allowed for one full run before the condition made it impossible to ride, that was all that was needed for event veteran Kyle Strait, who won the event for the second time -- eight years after his first Red Cow Rampage title</p>
-
-
+        <p>On a gustly day in Southerin Utah, a group of 25 daring mountain 
+          bikers blew the doors off what is possible on two wheels, unleashing 
+          some of the biggest moments the spot has ever seen. While mother nature 
+          only allowed for one full run before the condition made it impossible to 
+          ride, that was all that was needed for event veteran Kyle Strait, who won 
+          the event for the second time -- eight years after his first Red Cow
+          Rampage title</p>
       </div>
       <div className="videos">
-        <h1>NEXT VIDEOS</h1>
-        
+         <NextVideos/>
+
       </div>
-      
        <div className="comment__section">
-       
       <section>
-        <Comment commentInformation ={customerComments[0]}></Comment>
-        <Comment commentInformation ={customerComments[1]}></Comment>
-        <Comment commentInformation ={customerComments[2]}></Comment>
+        <Comments commentInformation ={customerComments[0]}></Comments>
+        <Comments commentInformation ={customerComments[1]}></Comments>
+        <Comments commentInformation ={customerComments[2]}></Comments>
       </section>
       </div>
       
@@ -45,19 +45,6 @@ export default function App () {
   );
 }
 
-function Comment (props) {
-  console.log(props);
 
-  return (
-    <div class="heading">
-      <img className ="Mohan__image" src= {("./assets/Images/Moham-muruge.jpg")} alt={'Mohan Muruge'}></img>
-      <p>{props.commentInformation.date}</p>
-      <h2>{props.commentInformation.firstName}</h2>
-      <h2>{props.commentInformation.lastName}</h2>
-      <p>{props.commentInformation.comment}</p>
-      
-    </div>
-  );
-}
 
 
