@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Videos.scss';
+import './Videos.scss';
 
 export default function NextVideos () {
     const nextVideosData = [
@@ -71,14 +71,8 @@ function Videos(props) {
            <div className="next__video__text__container">
             <h3 className="next__video__header"> {props.video.title}</h3>
             <p>{props.video.channel}</p>
-         </div>
-        {/* <span> Is Rated R?{props.isRatedR}</span> */}
-     </div>
-
-
+           </div>
+       </div>
     )
 }
 
-// const NextVideo = () => <h1>Next Videos</h1>
-
-// export default NextVideos

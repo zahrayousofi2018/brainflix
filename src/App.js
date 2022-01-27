@@ -3,7 +3,7 @@ import Comments from './components/Component/Comments'
 import NextVideos from './components/Component/Videos'
 import './App.scss';
 import Description from './components/Component/Description'
-// import './Videos.scss';
+import Navbar from './components/Component/Navbar'
 
 
 export default function App () {
@@ -15,6 +15,10 @@ export default function App () {
 
   return (
     <div className = "App">
+     <div class="Navbar">
+       <Navbar/>
+     </div>
+        
       <div className="video__main">
         <h1>Main Video</h1>     
       </div>
@@ -23,11 +27,7 @@ export default function App () {
       </div>
       <div className="videos">
          <NextVideos>
-          
-
          </NextVideos>
-
-
       </div>
        <div className="comment__section">
       <section>
