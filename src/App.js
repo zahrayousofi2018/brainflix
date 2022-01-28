@@ -7,8 +7,6 @@ import Navbar from './components/Component/Navbar'
 import MainVideo from './components/Component/MainVideo'
 
 
-
-
 export default function App () {
   const customerComments =  [
     {firstName: "Michael", lastName: "Lyons", comment: "They BLEW the ROOF off at their last event, once everyone started figuring out they were going. This is still simply the greatest opening of an event I have EVER witnessed.", date: "08/09/2021"},
