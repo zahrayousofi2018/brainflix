@@ -4,6 +4,9 @@ import NextVideos from './components/Component/Videos'
 import './App.scss';
 import Description from './components/Component/Description'
 import Navbar from './components/Component/Navbar'
+import MainVideo from './components/Component/MainVideo'
+
+
 
 
 export default function App () {
@@ -15,32 +18,35 @@ export default function App () {
 
   return (
     <div className = "App">
+
      <div class="Navbar">
        <Navbar/>
      </div>
         
-      <div className="video__main">
-        <h1>Main Video</h1>     
+      <div className="video__main">  
+        <MainVideo/>
       </div>
+
+     <div className="container">
       <div className= "description">
         <Description/>
-      </div>
-      <div className="videos">
+     </div>
+
+       <div className="videos">
          <NextVideos>
          </NextVideos>
       </div>
+      </div>
+    
        <div className="comment__section">
-      <section>
+        <section>
         <Comments commentInformation ={customerComments[0]}></Comments>
         <Comments commentInformation ={customerComments[1]}></Comments>
         <Comments commentInformation ={customerComments[2]}></Comments>
-      </section>
-      </div>
+         </section>
+
+       </div>
       
     </div>
-  );
-}
-
-
-
-
+  )
+  };

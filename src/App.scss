@@ -39,7 +39,6 @@
 
 .heading {
   font-style: italic;
-  background-color: lightpink;
   padding-left: 19px;
   font-style: Avenir;
   
@@ -52,4 +51,25 @@
   }
 };
 
+
+// .description {
+  
+
+// }
+
+// .comment__section {
+ 
+   
+// }
+
+// .videos {
+//   //  float: left;
+
+// }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 

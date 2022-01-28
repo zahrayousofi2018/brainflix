@@ -1,14 +1,10 @@
 import React from 'react';
 import './Videos.scss';
+// import MainVideo from './MainVideo';
 
 export default function NextVideos () {
     const nextVideosData = [
-        {
-         "id":"84e96018-4022-434e-80bf-000ce4cd12b8",
-         "title":"BMX Rampage: 2021 Highlights",
-         "channel":"Red Cow",
-         "image":"https://i.imgur.com/l2Xfgpl.jpg"},
-
+       
          {"id":"c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
          "title":"Become A Travel Pro In One Easy Lesson",
          "channel":"Todd Welch",
@@ -53,7 +49,7 @@ export default function NextVideos () {
 
     return (
         <section className ="next__videos">
-            <h2>Next Videos</h2>
+            <h2>NEXT VIDEOS</h2>
             {nextVideosData.map((element, index)=> {
                 return <Videos video={element} key={'video' + index} />;
             })}
@@ -63,7 +59,9 @@ export default function NextVideos () {
 
 
 function Videos(props) {
-    return (
+     return (
+       
+         <div className="next__video__main__container">
         <div className= "next__video__container">
            <div className= "next__video__image__container">
             <img src= {props.video.image} className= "next__video__image"/>
@@ -72,7 +70,11 @@ function Videos(props) {
             <h3 className="next__video__header"> {props.video.title}</h3>
             <p>{props.video.channel}</p>
            </div>
+           </div>
        </div>
     )
 }
+;
+
+
 

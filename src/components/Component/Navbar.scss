@@ -1,5 +1,14 @@
 .navbar__button {
-
+    font: 33px;
     color: white;
     background-color: blue;
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 63px;
+    padding-right: 63px;
+    font-size: 33px;
 }

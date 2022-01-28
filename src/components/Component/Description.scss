@@ -1,18 +1,31 @@
 .description__header {
     font-family: Avenir;
+    font-size: 33px;
+    line-height: 44px;
+    padding-left: 63px;
+    padding-right: 63px;
+    
 }
 
 .description__author{
     font-family: Avenir;
+    font-size:12px;
+    line-height: 22px;
+    padding-left: 63px;
+    padding-right: 63px;
 }
 
 .description__date {
     color: gray;
     font-family: Avenir;
+    padding-left: 63px;
+    padding-right: 63px;
 }
 
 .description__paragraph{
     font-family: Avenir;
-    padding-right: 500px;
-    margin-right:500px;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 63px;
+    padding-right: 63px;
 };
