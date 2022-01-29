@@ -35,6 +35,7 @@ export default function App () {
          </NextVideos>
       </div>
       </div>
+
     
        <div className="comment__section">
         <section>
