@@ -5,6 +5,7 @@ import './App.scss';
 import Description from './components/Component/Description'
 import Navbar from './components/Component/Navbar'
 import MainVideo from './components/Component/MainVideo'
+import NewComments from './components/Component/NewComment'
 
 
 export default function App () {
@@ -25,18 +26,23 @@ export default function App () {
         <MainVideo/>
       </div>
 
+     
+
      <div className="container">
-      <div className= "description">
+     <div className= "description">
         <Description/>
      </div>
-
+     
+     
        <div className="videos">
-         <NextVideos>
-         </NextVideos>
+         <NextVideos/>
       </div>
       </div>
 
-    
+        <div>
+          <NewComments/>
+        </div>
+        
        <div className="comment__section">
         <section>
         <Comments commentInformation ={customerComments[0]}></Comments>

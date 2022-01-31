@@ -8,38 +8,32 @@ font-family: Avenir;
 // display: inline;
 width: 50%;
 padding: 8px;
-
-
 }
 
 .next__video__image {
-    width: 250px;
-    height: 150px;
+    width: 180px;
+    height: 110px;
     padding-top: 16px;
     padding-bottom: 24px;
-    border-radius: 4%;
+    border-radius: 10%;
     float: left;
-   
 }
 
 .next__video__header {
-    font-family: Avenir;
-
+    font-family: Avenir;   
 }
 
 .next__video__text__container {
     font-family: Avenir;
-    text-align: justify;
-
+    padding-left: 20px;;
 }
 
 .next__video__header {
     font-family: Avenir;
-
 }
 
-.next__video__main__container {
-      padding-right: 100px;
- 
+.next__video__container {
+  display: flex;
+    justify-content: space-between;
 }
 

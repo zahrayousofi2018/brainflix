@@ -1,4 +1,33 @@
 .heading {
-    padding-right: 63px;
     margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+
+.grey__image {
+    height: 40px;
+    width:40px;
+    border-radius:50%;
+}
+
+.line__break {
+    color: lightgray;
+    margin-right: 30%;
+}
+
+.comment__container {
+   display: flex;
+  
+}
+
+.comment__date {
+    color: gray;
+    padding-left: 200px;
+}
+
+.comment__heading__lastName {
+    padding-left: 10px;
+}
+

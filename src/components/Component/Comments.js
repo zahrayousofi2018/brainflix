@@ -6,14 +6,25 @@ import './Comments.scss';
       console.log(props);
     
       return (
+
         <div className="heading">
-          <img className ="Mohan__image" src= {"src/assets/Images/Mohan-muruge.jpg"} alt={'Mohan Muruge'}></img>
+              <hr className="line__break"></hr>
+         <div>
+         
+          <img className ="grey__image" src= "./Images/Grey.png"></img>
+          </div>
+         
+          <div className="comment__container">
+     
+          <h2 className="comment__heading__fastName">{props.commentInformation.firstName}</h2>
+          <h2 className="comment__heading__lastName">{props.commentInformation.lastName}</h2>
           <p className="comment__date">{props.commentInformation.date}</p>
-          <h2 className="comment__heading">{props.commentInformation.firstName}</h2>
-          <h2 className="comment__heading">{props.commentInformation.lastName}</h2>
-          <p className="comment__date">{props.commentInformation.comment}</p>
+      
+          </div>
+          <p className="comment">{props.commentInformation.comment}</p>
         </div>
 
+    
       );
   }
 

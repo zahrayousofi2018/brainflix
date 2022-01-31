@@ -1,6 +1,10 @@
 import React from "react"
 import './MainVideo.scss'
 
+//make this state component //
+
+
+
 export default function MainVideo () {
     const mainVideoData = [
         {
@@ -13,7 +17,6 @@ export default function MainVideo () {
 
          return (
             <section className ="MainVideo">
-                {/* <h2>Main Videos</h2> */}
                 {mainVideoData.map((element, index)=> {
                     return <Main video={element} key={'mainVideo' + index} />;
                 })}

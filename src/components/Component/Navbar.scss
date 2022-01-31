@@ -1,21 +1,17 @@
 .navbar__button {
-    font: 33px;
     color: white;
     background-color: #0095FF;
-    width:350px;
-    height:80px;
-    font-size: 33px;
-    // padding-left: 50px;
-    // padding-right: 50px;
+    width:150px;
+    height:35px;
     font-weight: bold;
     font-family: Avenir;
-    border-radius: 10px;
+    border-radius: 6px;
     border-color: #0095FF;
-    margin-right: 70px;
-    margin-left: 70px;
-    
-   
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
+
+
 
 .navbar__nav {
     display: flex;
@@ -25,34 +21,44 @@
     padding-left: 63px;
     padding-right: 63px;
     font-size: 33px;
-    background: pink;
     padding-top: 20px;
 }
 
 .BrainFlix__logo {
-    width: 200px;
-    height: 100px;
+    width: 120px;
+    height: 25px;
 }
 
 .Mohan__placeholder {
-    height: 100px;
-    width:100px;
+    height: 40px;
+    width:40px;
     border-radius:50%;
+
+    @media (max-width: 768px) {
+        height:36px;
+        width: 36px;
+    }
 }
 
 .search__box {
-    padding-bottom: 10px;
-    width: 400px;
-    height:35px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: 30px;
+    // padding-bottom: 10px;
+    width: 125px;
+    height: 20px;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    position: relative;
+    opacity: 55%;
+    border-color: lightgray;
+    padding-left: 30px;
+    padding-top:8px;
 }
 
 .search__icon {
-    padding-left: 70px;
-
-    // z-index: -80px;
+   padding-top: 26px;
+   padding-left:5px;
+   position: absolute;
 
 }
 
@@ -63,3 +69,4 @@
 .BrainFlix__first__container {
     margin-left: 100px;
 }
+

@@ -51,7 +51,7 @@ export default function NextVideos () {
         <section className ="next__videos">
             <h2>NEXT VIDEOS</h2>
             {nextVideosData.map((element, index)=> {
-                return <Videos video={element} key={'video' + index} />;
+                return <Videos clickHandler = {() => console.log("Change Me")}  video={element} key={'video' + index} />;
             })}
         </section>
     )
@@ -61,20 +61,19 @@ export default function NextVideos () {
 function Videos(props) {
      return (
        
-         <div className="next__video__main__container">
+         <div onClick={() => props.clickHandler()} className="next__video__main__container">
         <div className= "next__video__container">
            <div className= "next__video__image__container">
             <img src= {props.video.image} className= "next__video__image"/>
            </div>
            <div className="next__video__text__container">
             <h3 className="next__video__header"> {props.video.title}</h3>
-            <p>{props.video.channel}</p>
+            <p className="next__video__paragraph">{props.video.channel}</p>
            </div>
            </div>
        </div>
     )
 }
 ;
-
 
 
