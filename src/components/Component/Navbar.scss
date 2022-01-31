@@ -11,8 +11,6 @@
     margin-bottom: 5px;
 }
 
-
-
 .navbar__nav {
     display: flex;
     justify-content: space-between;
@@ -22,6 +20,11 @@
     padding-right: 63px;
     font-size: 33px;
     padding-top: 20px;
+
+    @media (max-width: 600px) {
+
+        
+    }
 }
 
 .BrainFlix__logo {

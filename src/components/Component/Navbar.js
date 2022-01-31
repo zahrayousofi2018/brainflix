@@ -12,7 +12,6 @@ function Navbar() {
            
            <img className="search__icon" src="Icons/search.svg"></img>
     
-       
            <input className="search__box" type="text" placeholder= "Search..." ></input>
          
             <img src="Icons/upload.svg" className="upload"></img>

@@ -10,6 +10,30 @@
 
 .NewComment__div {
     padding-left: 63px;
+    padding-right: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new__comment__box {
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.comment_box_text {
+    color: lightgrey;
+    font-weight: bold;
+    font-family: Avenir;
    
 }
 
+.main__div {
+    padding-right: 150px;
+
+}
+
+.Mohan__placeholder {
+    margin-right: 10px;
+}

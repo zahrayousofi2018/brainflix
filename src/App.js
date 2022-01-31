@@ -26,7 +26,6 @@ export default function App () {
         <MainVideo/>
       </div>
 
-     
 
      <div className="container">
      <div className= "description">
