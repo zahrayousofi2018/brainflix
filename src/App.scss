@@ -41,41 +41,44 @@
   font-style: italic;
   // padding-left: 19px;
   font-style: Avenir;
-
-  
-
-  @media (min-width:480px){
-    font-size: 14px;
-  }
-  @media (min-width:768px) {
-   font-size: 14px;
-  }
-};
-
-
-// .description {
-  
-
-// }
-
-// .comment__section {
- 
-   
-// }
-
-.videos {
-padding-right: 16%;
 }
+  
+
+//   @media (min-width:480px){
+//     font-size: 14px;
+//   }
+//   @media (min-width:768px) {
+//    font-size: 14px;
+//   }
+// };
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .comment__section {
   position: relative;
-  bottom: 800px;
   padding-left: 63px;
-  padding-right: 55%;
+  width: 65%;
+  font-style: Avenir;
+  // padding-right: 55%;
 }
+
+.description {
+  padding-left: 63px;
+  width: 65%;
+  font-style: Avenir;
+}
+
+.NewComments {
+  padding-left: 63px;
+  padding-right: 63%;
+  font-style: Avenir;
+  // width: 65%;
+}
+
+.videos {
+  padding-right: 63px;
+  // width: 65%;
+}
+

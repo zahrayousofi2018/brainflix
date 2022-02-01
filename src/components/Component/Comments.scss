@@ -1,9 +1,8 @@
 .heading {
     margin:auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    
 }
 
 .grey__image {
@@ -14,20 +13,34 @@
 
 .line__break {
     color: lightgray;
-    margin-right: 30%;
+    
+    // margin-right: 30%;
 }
 
 .comment__container {
    display: flex;
+   justify-content: space-between;
+   padding-top: 16px;
   
 }
 
 .comment__date {
     color: gray;
-    padding-left: 200px;
+    // padding-left: 200px;
 }
 
 .comment__heading__lastName {
-    padding-left: 10px;
+    padding-right: 500px;
+    
 }
 
+.comment__heading__fastName{
+    padding-right: 20px;
+}
+
+.comment {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+}

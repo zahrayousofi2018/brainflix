@@ -4,19 +4,20 @@ import './Description.scss'
 function Description() {
 return (
     <div>
-        <div>
         <h1 className="description__header">BMX Rampage: 2021 Highlights</h1>
-        <div className=" ">
-        <h3 className="description__author">By Red Crow</h3>
-        <h4 className="description__date">07/11/2021</h4>
-        <img src="./Icons/views.svg"/>
-        <h4 className= "description__view">1,001,023</h4> 
-        <img className= "" src="./Icons/likes.svg"/>
-        <h4 className= "description__view">110,985</h4>
+        <div className="description__container">
+           <div>
+             <h3 className="description__author">By Red Crow</h3>
+             <h4 className="description__date">07/11/2021</h4>
+           </div>
+            <div className="description__container">
+              <img src="./Icons/views.svg"/>
+              <h4 className= "description__view">1,001,023</h4> 
+              <img className= "" src="./Icons/likes.svg"/>
+              <h4 className= "description__view">110,985</h4>
+           </div>
         </div>
-        </div>
-        <hr></hr>
-   
+
         <p className="description__paragraph">On a gustly day in Southerin Utah, 
           a group of 25 daring mountain 
           bikers blew the doors off what is possible on two wheels, unleashing 

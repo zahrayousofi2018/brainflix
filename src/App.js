@@ -18,39 +18,35 @@ export default function App () {
   return (
     <div className = "App">
 
-     <div class="Navbar">
-       <Navbar/>
-     </div>
+      <div class="Navbar">
+        <Navbar/>
+      </div>
         
       <div className="video__main">  
         <MainVideo/>
       </div>
 
-
      <div className="container">
-     <div className= "description">
-        <Description/>
-     </div>
-     
+        <div>
+          <div className= "description">
+          <Description/>
+          </div>
+          <div>
+          <NewComments/>
+          </div>
+          <div className="comment__section">
+           <Comments commentInformation ={customerComments[0]}></Comments>
+           <Comments commentInformation ={customerComments[1]}></Comments>
+           <Comments commentInformation ={customerComments[2]}></Comments>
+          </div>
+       </div>
      
        <div className="videos">
          <NextVideos/>
-      </div>
+       </div>    
+
       </div>
 
-        <div>
-          <NewComments/>
-        </div>
-        
-       <div className="comment__section">
-        <section>
-        <Comments commentInformation ={customerComments[0]}></Comments>
-        <Comments commentInformation ={customerComments[1]}></Comments>
-        <Comments commentInformation ={customerComments[2]}></Comments>
-         </section>
-
-       </div>
-      
     </div>
   )
   };

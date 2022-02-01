@@ -20,7 +20,6 @@
     padding-right: 63px;
     font-size: 33px;
     padding-top: 20px;
-
     @media (max-width: 600px) {
 
         
@@ -53,7 +52,7 @@
     margin-bottom: 5px;
     position: relative;
     opacity: 55%;
-    border-color: lightgray;
+    background-color: #FAFAFA;
     padding-left: 30px;
     padding-top:8px;
 }
@@ -66,10 +65,10 @@
 }
 
 .BrainFlix__second__container {
-    margin-right: 100px;
+    margin-right: 63px;
 }
 
 .BrainFlix__first__container {
-    margin-left: 100px;
+    margin-left: 63px;
 }
 
