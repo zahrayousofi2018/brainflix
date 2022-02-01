@@ -5,6 +5,11 @@ import './MainVideo.scss'
 
 
 
+
+
+
+///
+
 export default function MainVideo () {
     const mainVideoData = [
         {
@@ -29,7 +34,7 @@ export default function MainVideo () {
         return (
            <div className= "main__video__container">
               <div className= "main__video__image__container">
-               <img src= {props.video.image} className= "main__video__image"/>
+               <img src= {props.video.image} className= "main__video__image" alt="main video"/>
               </div>
               <div className="main__video__text__container">
                <h3 className="main__video__header"> {props.video.title}</h3>

@@ -8,10 +8,10 @@ import './NewComment.scss'
         <h3 className="comments__header">3 Comments</h3>
       <div className="NewComment__div">
         <div>
-      <img src="Images/Mohan-muruge.jpg" className="Mohan__placeholder"></img>
+      <img src="Images/Mohan-muruge.jpg" className="Mohan__placeholder" alt="Mohan"></img>
       </div>
       <div>
-      {/* <p className="comment_box_text">JOIN THE CONVERSATION</p> */}
+      <label className="comment_box_text">JOIN THE CONVERSATION</label>
       <input className="new__comment__box" type="text" placeholder= "Add a new comment..." ></input>
       </div>
       <div>

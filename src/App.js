@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Comments from './components/Component/Comments'
 import NextVideos from './components/Component/Videos'
 import './App.scss';

@@ -64,7 +64,7 @@ function Videos(props) {
          <div onClick={() => props.clickHandler()} className="next__video__main__container">
         <div className= "next__video__container">
            <div className= "next__video__image__container">
-            <img src= {props.video.image} className= "next__video__image"/>
+            <img src= {props.video.image} className= "next__video__image" alt="next video"/>
            </div>
            <div className="next__video__text__container">
             <h3 className="next__video__header"> {props.video.title}</h3>

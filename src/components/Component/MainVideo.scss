@@ -1,13 +1,37 @@
 .main__video__container {
     background-color: black;
-    height: 60%
+    width: 100vw;
+    height:70vh;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+        width: 100vw;
+        height: 60vh;
+  
+  
+    }
 }
 
 .main__video__image {
-    width: 80%;
-    height: 60%;
+    width: 80vw;
+    height: 70vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    @media (min-width: 768px) and (max-width: 1279px) {
+
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+    
+         width: 100vw;
+       height: 60vh;
+  
+    }
 }

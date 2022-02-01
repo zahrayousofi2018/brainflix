@@ -3,19 +3,19 @@ import './Description.scss'
 
 function Description() {
 return (
-    <div>
+    <div class="description__div">
         <h1 className="description__header">BMX Rampage: 2021 Highlights</h1>
-        <div className="description__container">
-           <div>
+        <div>
+          <hr></hr>
+           <div className="description__container" >
              <h3 className="description__author">By Red Crow</h3>
              <h4 className="description__date">07/11/2021</h4>
-           </div>
-            <div className="description__container">
-              <img src="./Icons/views.svg"/>
+              <img src="./Icons/views.svg" alt="icon"/>
               <h4 className= "description__view">1,001,023</h4> 
-              <img className= "" src="./Icons/likes.svg"/>
+              <img className= "description__icon" src="./Icons/likes.svg" alt="icon"/>
               <h4 className= "description__view">110,985</h4>
            </div>
+           <hr></hr>
         </div>
 
         <p className="description__paragraph">On a gustly day in Southerin Utah, 

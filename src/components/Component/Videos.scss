@@ -4,11 +4,8 @@
     padding-bottom: 24px;  
 }
 
-
 .next__video__image__container {
 font-family: Avenir;
-// display: inline;
-// width: 50%;
 padding: 8px;
 }
 
@@ -20,9 +17,6 @@ padding: 8px;
     float: left;
 }
 
-.next__video__header {
-    font-family: Avenir;   
-}
 
 .next__video__text__container {
     font-family: Avenir;
@@ -35,6 +29,23 @@ padding: 8px;
 
 .next__video__container {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+   display:flex;
+   align-items: right;
+   padding-left: 63px;
+
+  }
+
+  @media (min-width: 480px) and (max-width:767px) {
+  
+
+  }
+
+  
 }
+
+
 

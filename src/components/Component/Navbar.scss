@@ -9,6 +9,17 @@
     border-color: #0095FF;
     margin-right: 20px;
     margin-bottom: 5px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+    }
+     
+    @media (min-width: 480px) and (max-width:767px) {
+        width: 80vw;
+        height: 10vh;
+        padding-left: 16px;
+        font-size: larger;
+    }
 }
 
 .navbar__nav {
@@ -16,30 +27,83 @@
     justify-content: space-between;
     flex-direction: row;
     margin: auto;
-    padding-left: 63px;
-    padding-right: 63px;
     font-size: 33px;
     padding-top: 20px;
-    @media (max-width: 600px) {
-
-        
+    background: lightpink;
+    @media (min-width: 768px) and (max-width: 1279px) {
+        // display: flex;
+        // justify-content: space-around;
+        // flex-direction: row;
+    }
+     
+       @media (min-width: 480px) and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     
     }
 }
 
 .BrainFlix__logo {
     width: 120px;
     height: 25px;
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+      width: 32vw;
+      height: 20vh;
+      padding-left: 30%;
+  
+  
+    }
 }
 
-.Mohan__placeholder {
+.Mohan__nav__placeholder__one {
     height: 40px;
     width:40px;
-    border-radius:50%;
+    border-radius:50%; 
 
-    @media (max-width: 768px) {
-        height:36px;
-        width: 36px;
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+       }
+
+       @media (min-width: 480px) and (max-width:767px) {
+        // display: none;
+        margin-top: 30px
+         
+        }
+}
+
+.Mohan__nav__placeholder__two {
+    @media (min-width: 1300px)  {
+    display: none;
+    
+}
+    @media (min-width: 768px) and (max-width: 1279px) {
+       display: none; 
     }
+  
+
+    @media (min-width: 480px) and (max-width:767px) {
+    //    display: none;
+        width:100px;
+        height: 100px;
+        border-radius: 50%;
+         
+        }  
+}
+
+
+img.Mohan__placeholder {
+    @media (min-width: 480px) and (max-width:767px) {
+       margin-bottom: 80px;
+          
+    }
+
 }
 
 .search__box {
@@ -55,6 +119,17 @@
     background-color: #FAFAFA;
     padding-left: 30px;
     padding-top:8px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+    width: 70vw;
+    height: 10vh;
+  
+    }
 }
 
 .search__icon {
@@ -62,13 +137,55 @@
    padding-left:5px;
    position: absolute;
 
+   @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+}
+
+    @media (min-width: 480px) and (max-width:767px) {
+    width: 8vw; 
+    padding-left: 20px  
+    
+}
+
 }
 
 .BrainFlix__second__container {
-    margin-right: 63px;
+    // margin-right: 63px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+    margin-left: 24px; 
+
+    }
 }
 
 .BrainFlix__first__container {
-    margin-left: 63px;
+    // margin-left: 63px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+       
+        
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+    
+  
+  
+    }
 }
 
+
+// .BrainFlix__container {
+
+//     @media (min-width: 480px) and (max-width:767px) {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+
+// }
+// }
