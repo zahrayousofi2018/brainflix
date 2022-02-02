@@ -4,11 +4,11 @@ import './Description.scss'
 function Description() {
 return (
     <div class="description__div">
-        <h1 className="description__header">BMX Rampage: 2021 Highlights</h1>
+        {/* <h1 className="description__header">BMX Rampage: 2021 Highlights</h1> */}
         <div>
           <hr></hr>
            <div className="description__container" >
-             <h3 className="description__author">By Red Crow</h3>
+             {/* <h3 className="description__author">By Red Crow</h3> */}
              <h4 className="description__date">07/11/2021</h4>
               <img src="./Icons/views.svg" alt="icon"/>
               <h4 className= "description__view">1,001,023</h4> 

@@ -23,6 +23,10 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+
     @media (min-width: 768px) and (max-width: 1279px) {
 
         
@@ -32,6 +36,36 @@
     
          width: 100vw;
        height: 60vh;
+
   
     }
 }
+
+.play__icon {
+    position: absolute;
+    top: 630px;
+    left: 160px;
+}
+
+.full__screen {
+   position: absolute;
+    top: 630px;
+    left: 1060px;
+}
+
+.volume__up {
+    position: absolute;
+    top: 630px;
+    left: 1090px;
+}
+
+.pause__icon {
+ position: absolute;
+    top: 630px;
+    left: 1020px;
+
+}
+
+
+
+

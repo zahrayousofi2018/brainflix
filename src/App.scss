@@ -65,25 +65,27 @@
   position: relative;
   padding-left: 63px;
 
-  width: 65%;
+  // width: 65%;
   font-style: Avenir;
   
 
   @media (min-width: 768px) and (max-width: 1279px) {
-     width: 100%;
+    
  
    }
  
    @media (min-width: 480px) and (max-width:767px) {
+    width: 100vw;
+    padding-right: 16px;
+    padding-left: 16px;
    
- 
    }
 }
 
 .description {
-  // padding-left: 63px;
+  padding-left: 63px;
   // width: 65%;
-  // font-style: Avenir;
+  font-style: Avenir;
 
   @media (min-width:480px) and (max-width:767px) { 
   width: 90vw;
@@ -102,5 +104,13 @@
 .videos {
   padding-right: 63px;
   // width: 65%;
+}
+
+.Navbar{
+  padding-left: 63px;
+  padding-right: 63px;
+
+
+
 }
 

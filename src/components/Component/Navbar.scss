@@ -9,6 +9,10 @@
     border-color: #0095FF;
     margin-right: 20px;
     margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    left:0;
+    overflow: hidden;
 
     @media (min-width: 768px) and (max-width: 1279px) {
        
@@ -20,6 +24,12 @@
         padding-left: 16px;
         font-size: larger;
     }
+}
+
+.upload {
+    position: absolute;
+    top: 63px;
+    left: 1020px;
 }
 
 .navbar__nav {

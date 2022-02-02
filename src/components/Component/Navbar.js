@@ -15,8 +15,13 @@ function Navbar() {
            <input className="search__box" type="text" placeholder= "Search..." ></input>
            {/* <img src="Images/Mohan-muruge.jpg" className="Mohan__nav__placeholder__two" alt="Mohan placeholder"></img> */}
          
-            <img src="Icons/upload.svg" className="upload" alt="upload"></img>
-            <button  className="navbar__button">UPLOAD</button>
+           
+            <button  type="button" className="navbar__button">
+                <span class="button__text">UPLOAD</span>
+                <span class="button__icon">
+                  <img src="Icons/upload.svg" className="upload" alt="upload"></img>
+                </span>
+                </button>
             <img src="Images/Mohan-muruge.jpg" className="Mohan__nav__placeholder__one" alt="Mohan placeholder"></img>
       
         </div>

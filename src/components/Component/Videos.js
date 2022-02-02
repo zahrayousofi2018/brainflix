@@ -1,8 +1,8 @@
 import React from 'react';
 import './Videos.scss';
-// import MainVideo from './MainVideo';
+import MainVideo from './MainVideo';
 
-export default function NextVideos () {
+export default function NextVideos (props) {
     const nextVideosData = [
        
          {"id":"c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
@@ -46,12 +46,11 @@ export default function NextVideos () {
          "image":"https://i.imgur.com/i6S8m7I.jpg" 
         }
     ];
-
     return (
         <section className ="next__videos">
             <h2>NEXT VIDEOS</h2>
             {nextVideosData.map((element, index)=> {
-                return <Videos clickHandler = {() => console.log("Change Me")}  video={element} key={'video' + index} />;
+                return <Videos video={element} key={'video' + index}  clickhandler = {props.clickhandler}/>;
             })}
         </section>
     )
@@ -59,9 +58,10 @@ export default function NextVideos () {
 
 
 function Videos(props) {
+
      return (
        
-         <div onClick={() => props.clickHandler()} className="next__video__main__container">
+         <div onClick={()=>props.clickhandler(props.video)} className="next__video__main__container">
         <div className= "next__video__container">
            <div className= "next__video__image__container">
             <img src= {props.video.image} className= "next__video__image" alt="next video"/>
