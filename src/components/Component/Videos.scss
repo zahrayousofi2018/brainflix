@@ -6,7 +6,7 @@
 
 .next__video__image__container {
 font-family: Avenir;
-padding: 8px;
+padding-left: 8px;
 }
 
 .next__video__image {
@@ -20,23 +20,23 @@ padding: 8px;
 
 .next__video__text__container {
     font-family: Avenir;
-    padding-left: 20px;;
+    padding-left: 20px;
 }
 
 .next__video__header {
     font-family: Avenir;
-    padding-left: 63px;
+    // padding-left: 63px;
 }
 
 .next__video__container {
   display: flex;
-  justify-content: space-between;
+//   justify-content: space-between;
 
 
   @media (min-width: 768px) and (max-width: 1279px) {
    display:flex;
    align-items: right;
-   padding-left: 63px;
+   padding-left: 36px;
   }
 
   @media (min-width: 480px) and (max-width:767px) {

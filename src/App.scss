@@ -107,10 +107,17 @@
 }
 
 .Navbar{
+
+  @media (min-width: 1280px){
   padding-left: 63px;
   padding-right: 63px;
+ 
+  }
+
+  @media (min-width:768px){
 
 
+  }
 
 }
 

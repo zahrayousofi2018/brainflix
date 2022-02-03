@@ -22,6 +22,16 @@
    display: flex;
    justify-content: space-between;
    padding-top: 16px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+    
+
+    }
+  
+    @media (min-width: 480px) and (max-width:767px) {
+     
+  
+    }
   
 }
 
@@ -34,7 +44,7 @@
     }
   
     @media (min-width: 480px) and (max-width:767px) {
-     padding-right: 100px;
+     
   
     }
    
