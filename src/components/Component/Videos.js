@@ -48,7 +48,7 @@ export default function NextVideos (props) {
     ];
     return (
         <section className ="next__videos">
-            <h2>NEXT VIDEOS</h2>
+            <h2 className="Next__Videos__Heading">NEXT VIDEOS</h2>
             {nextVideosData.map((element, index)=> {
                 return <Videos video={element} key={'video' + index}  clickhandler = {props.clickhandler}/>;
             })}
