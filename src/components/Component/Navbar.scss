@@ -39,7 +39,6 @@
     margin: auto;
     font-size: 33px;
     padding-top: 20px;
-    background: lightpink;
     @media (min-width: 768px) and (max-width: 1279px) {
         // display: flex;
         // justify-content: space-around;
@@ -84,13 +83,12 @@
 
        @media (min-width: 480px) and (max-width:767px) {
         display: none;
-        margin-top: 30px
-         
+        margin-top: 30px 
         }
 }
 
 .Mohan__nav__placeholder__two {
-    @media (min-width: 1300px)  {
+    @media (min-width: 1280px)  {
     display: none;
     
 }
