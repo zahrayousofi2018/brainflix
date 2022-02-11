@@ -1,12 +1,16 @@
 // import logo from './logo.svg';
 import React, { Component } from "react";
-import Comments from './components/Component/Comments'
-import NextVideos from './components/Component/Videos'
+// import Comments from './components/Component/Comments'
+// import NextVideos from './components/Component/Videos'
 import './App.scss';
-import Description from './components/Component/Description'
-import Navbar from './components/Component/Navbar'
-import MainVideo from './components/Component/MainVideo'
-import NewComments from './components/Component/NewComment'
+// import Description from './components/Component/Description'
+// import Navbar from './components/Component/Navbar'
+// import MainVideo from './components/Component/MainVideo'
+// import NewComments from './components/Component/NewComment'
+import Home from "./components/Component/Home"
+import Upload from "./components/Component/Upload"
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+
 
 
   class App extends Component {
@@ -42,42 +46,69 @@ import NewComments from './components/Component/NewComment'
   ];
   
   return (
-    <div className = "App">
-
-      <div className="Navbar">
-        <Navbar/>
+    <BrowserRouter>
+      <div>
+         <nav>
+          <Link to ="/">Home</Link>
+          <Link to ="Upload">Upload Page</Link>
+         </nav>
+           <div>
+              <Switch>
+                <Route path ="/" exact >
+                <Home customerComments={this.customerComments} video={this.state.mainVideoData}/>
+              
+                </Route>
+                <Route path="/Upload" component={Upload}/>
+             </Switch>
+           </div>
       </div>
-        
-      <div className="video__main">  
-      
-        <MainVideo video={this.state.mainVideoData}/>
-      </div>
+    </BrowserRouter>
 
-     <div className="container">
-        <div>
-          <div>
-          <Description/>
-          </div>
-          <div>
-          <NewComments/>
-          </div>
-          <div className="comment__section">
-           <Comments commentInformation ={customerComments[0]}></Comments>
-           <Comments commentInformation ={customerComments[1]}></Comments>
-           <Comments commentInformation ={customerComments[2]}></Comments>
-          </div>
-       </div>
-     
-       <div className="videos">
-         <NextVideos clickhandler={(newVal)=>this.clickhandler(newVal)}/>
-       </div>    
-
-      </div>
-
-    </div>
-  )
+      )
   };
 };
+     
+    // { <div className = "App">
+    //   <div className="Navbar">
+    //     <Navbar/>
+    //     <Link to="/">Home</Link>
+    //   </div>
+
+    //   <Switch>
+    //     <Route path="/" exact component ={Home} />
+        
+    //   </Switch>
+        
+    //   <div className="video__main">  
+    //     <MainVideo video={this.state.mainVideoData}/>
+    //   </div>
+
+    //  <div className="container">
+    //     <div>
+    //       <div>
+    //       <Description/>
+    //       </div>
+
+    //       <div>
+    //       <NewComments/>
+    //       </div>
+
+    //       <div className="comment__section">
+    //        <Comments commentInformation ={customerComments[0]}></Comments>
+    //        <Comments commentInformation ={customerComments[1]}></Comments>
+    //        <Comments commentInformation ={customerComments[2]}></Comments>
+    //       </div>
+    //    </div>
+     
+    //    <div className="videos">
+    //      <NextVideos clickhandler={(newVal)=>this.clickhandler(newVal)}/>
+    //    </div>    
+
+    //   </div>
+
+    // </div>
+    // }
+
 
 
   export default App;
