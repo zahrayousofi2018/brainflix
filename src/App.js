@@ -47,10 +47,9 @@ import {Link} from 'react-router-dom'
   return (
        
        <BrowserRouter>
-       <Link to ="/">BrainFlix</Link>
-       <Link to="/Uploads">Uploads</Link>
+       <Link to ="/">Home</Link>
        <Switch>
-         <Route path="/">
+         <Route path="/" exact>
            <Home video={this.state.mainVideoData} />
         </Route>
        <Route path= "/Uploads" component ={Uploads}/>
