@@ -3,7 +3,7 @@ import Comments from './Comments'
 import NextVideos from './Videos'
 import Description from './Description'
 import Navbar from './Navbar'
-import MainVideo from './MainVideo'
+// import MainVideo from './MainVideo'
 import NewComments from './NewComment'
 
 

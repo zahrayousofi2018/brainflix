@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React, { Component } from "react";
 // import Comments from './components/Component/Comments'
 // import NextVideos from './components/Component/Videos'
@@ -49,7 +48,7 @@ import {Link} from 'react-router-dom'
        
        <BrowserRouter>
        <Link to ="/">BrainFlix</Link>
-       <Link to="/shop">Uploads</Link>
+       <Link to="/Uploads">Uploads</Link>
        <Switch>
          <Route path="/">
            <Home video={this.state.mainVideoData} />

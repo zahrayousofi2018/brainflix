@@ -1,13 +1,11 @@
-import React from "react"
+import React from "react";
 
 
+function Uploads(props) {
 
-function Uploads(props){
    return(
        <div>
-         <div>
-           
-         </div>
+         
 
        <div>
            <h1>Upload Video</h1>
