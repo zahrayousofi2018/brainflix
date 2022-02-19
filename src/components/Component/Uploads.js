@@ -10,7 +10,7 @@ function Uploads(props) {
 
        <div>
            <hr></hr>
-           <h1>Upload Video</h1>  
+           <h1 className="heading__text">Upload Video</h1>  
        </div>
       
        <div class="Uploads__video">
@@ -31,9 +31,9 @@ function Uploads(props) {
         </div>
         <hr></hr>
         <div>
-            <button className="cancel__button"type="button">CANCEL</button>
-          <button className="publish__button"type="button">PUBLISH</button>
-          
+            <button className="cancel__button__one"type="button">CANCEL</button>
+            <button className="publish__button"type="button">PUBLISH</button>
+            <button className="cancel__button__two"type="button">CANCEL</button>
         </div>
         </div>
        

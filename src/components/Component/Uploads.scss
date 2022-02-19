@@ -14,7 +14,6 @@
     @media(min-width: 1280px) {
         padding-left: 63px;
         
-        
     }
 }
 
@@ -37,7 +36,7 @@
 }
 
 
-.cancel__button {
+.cancel__button__one {
     color: #0095FF;
     font-weight: bold;
     background-color: white ;
@@ -45,7 +44,7 @@
     width:150px;
     height:35px;
       @media (min-width:480px) and (max-width:767px) { 
-       
+       display: none;
     }
 
     @media (min-width: 768px) and (max-width: 1279px) {
@@ -57,6 +56,30 @@
         
     }
 }
+
+.cancel__button__two {
+    color: #0095FF;
+    font-weight: bold;
+    background-color: white ;
+    border-color: white ;
+    width:150px;
+    height:35px;
+      @media (min-width:480px) and (max-width:767px) { 
+       width: 80vw;
+       height: 10vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      display: none
+    }
+
+    @media(min-width: 1280px) {
+        display: none;
+        
+    }
+}
+
+
 
 
 .publish__button {
@@ -84,6 +107,15 @@
     }
 }
 
+.uploads__label {
+    @media (min-width: 480px) and (max-width: 767px) {
+        padding-left: 16px;
+        color: lightGray;
+        font-weight: bold;
+
+    }
+}
+
 
 .uploads__label__title {
     color: lightgrey;
@@ -94,6 +126,7 @@
        width: 80vw;
        height: 10vh;
        padding-left: 16px;
+       margin-bottom: 30px;
     }
 
     @media (min-width: 768px) and (max-width: 1279px) {
@@ -142,5 +175,12 @@
         
     }
 
+
+}
+
+.heading__text {
+    @media(min-width:480px) and (max-width: 767px) {
+        padding-left: 16px;
+   }
 
 }

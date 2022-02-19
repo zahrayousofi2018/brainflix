@@ -52,6 +52,7 @@ const myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
   return (
        <div>
        <BrowserRouter>
+       {/* <Link to ="/">Home</Link> */}
        <Navbar/>
        <Switch>
          <Route path="/" exact>
