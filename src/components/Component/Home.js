@@ -1,4 +1,6 @@
 import React from "react";
+// import React, { Component } from "react";
+import axios from "axios";
 import Comments from './Comments'
 import NextVideos from './Videos'
 import Description from './Description'
@@ -7,16 +9,29 @@ import Navbar from './Navbar'
 import NewComments from './NewComment'
 
 
+function Home () {
+  // class Home extends Component {
+  //   state ={
+  //     customerComments:[],
+  //   };
 
-function Home (props) {
-  console.log(props.video)
+  const API_URL= "https://project-2-api.herokuapp.com";
+  // const myApiKey = "8d6ce8f8-924a-4f80-bc0a-5cd301d742a7";
+ 
+  // compomentDidMount() {
+     axios.get(API_URL).then(res => {
+     console.log(res);
+     
+   }
+   )
+  // }
 
-  
+// render () {
 return (
 
    <div className = "App">
       <div className="Navbar">
-        <Navbar/>
+        {/* <Navbar/> */}
       </div>
         
       {/* <div className="video__main">  
@@ -50,8 +65,10 @@ return (
 
       </div>
   )
-};
+  }
 
+  // };
+ 
  const customerComments =  [
     {firstName: "Michael", lastName: "Lyons", comment: "They BLEW the ROOF off at their last event, once everyone started figuring out they were going. This is still simply the greatest opening of an event I have EVER witnessed.", date: "08/09/2021"},
 
@@ -59,6 +76,9 @@ return (
 
     {firstName: "Theodore", lastName: "Duncan", comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He's definitly my favorite ever!", date: "07/11/2021"},
   ];
+
+
+  
 
 export default Home;
 

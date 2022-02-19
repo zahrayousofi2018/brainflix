@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import axios from "axios";
 // import Comments from './components/Component/Comments'
 // import NextVideos from './components/Component/Videos'
 import './App.scss';
 // import Description from './components/Component/Description'
-// import Navbar from './components/Component/Navbar'
+import Navbar from './components/Component/Navbar'
 // import MainVideo from './components/Component/MainVideo'
 // import NewComments from './components/Component/NewComment'
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -12,6 +13,9 @@ import Uploads from "./components/Component/Uploads";
 import {Link} from 'react-router-dom'
 
 
+
+export const API_URL ="https://project-2-api.herokuapp.com";
+const myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
 
   class App extends Component {
     constructor() {
@@ -34,6 +38,7 @@ import {Link} from 'react-router-dom'
     }
   
   render() {
+    
 
 
   // const customerComments =  [
@@ -45,9 +50,9 @@ import {Link} from 'react-router-dom'
   // ];
   
   return (
-       
+       <div>
        <BrowserRouter>
-       <Link to ="/">Home</Link>
+       <Navbar/>
        <Switch>
          <Route path="/" exact>
            <Home video={this.state.mainVideoData} />
@@ -55,6 +60,8 @@ import {Link} from 'react-router-dom'
        <Route path= "/Uploads" component ={Uploads}/>
        </Switch>
        </BrowserRouter>
+       </div>
+       
   )
   };
 };

@@ -1,0 +1,146 @@
+.Uploads__image {
+    width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+    @media (min-width:480px) and (max-width:767px) { 
+        padding-left: 16px;
+       
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        padding-left: 63px;
+        
+        
+    }
+}
+
+
+.Uploads__video{
+    width: 200px;
+    height: 300px;
+      @media (min-width:480px) and (max-width:767px) { 
+       
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        
+        
+    }
+}
+
+
+.cancel__button {
+    color: #0095FF;
+    font-weight: bold;
+    background-color: white ;
+    border-color: white ;
+    width:150px;
+    height:35px;
+      @media (min-width:480px) and (max-width:767px) { 
+       
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        
+        
+    }
+}
+
+
+.publish__button {
+    background-color:#0095FF;
+    color: white;
+    font-weight: bold;
+    border-color: #0095FF;
+    width:150px;
+    height:35px;
+    @media (min-width:480px) and (max-width:767px) { 
+       width: 80vw;
+       height: 10vh;
+       margin-left: 16px;
+       
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+      
+        
+        
+    }
+}
+
+
+.uploads__label__title {
+    color: lightgrey;
+    font-weight: bold;
+    font-family: Avenir;
+
+    @media (min-width:480px) and (max-width:767px) { 
+       width: 80vw;
+       height: 10vh;
+       padding-left: 16px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        
+        
+    }
+}
+
+
+.uploads__label__description {
+    color: lightgrey;
+    font-weight: bold;
+    font-family: Avenir;
+    @media (min-width:480px) and (max-width:767px) { 
+       width: 80vw;
+       height: 10vh;
+       padding-left: 16px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        
+}
+}
+
+
+.new__comment__box {
+    padding-right: 50px;
+    @media (min-width:480px) and (max-width:767px) { 
+       
+    }
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      
+    }
+
+    @media(min-width: 1280px) {
+        
+        
+    }
+
+
+}
