@@ -5,7 +5,7 @@ import axios from "axios";
 import NextVideos from './Videos'
 import Description from './Description'
 // import Navbar from './Navbar'
-// import MainVideo from './MainVideo'
+import MainVideo from './MainVideo'
 import NewComment from './NewComment'
 
 
@@ -16,11 +16,13 @@ export const API_URL= "https://project-2-api.herokuapp.com/videos";
   class Home extends Component {
     state = {
     nextVideoData: [],
+    mainVideoData: {},
     };
 
-    updateVideos(array){
+    updateVideos(videoArray){
     this.setState({
-      nextVideoData: array,
+      nextVideoData: videoArray,
+      mainVideoData: videoArray[0],
     });
 }
   
@@ -36,13 +38,13 @@ export const API_URL= "https://project-2-api.herokuapp.com/videos";
    );
   }
 
-  componentDidUpdate () {
-    axios
-    .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
-    .then((response) => {
-      this.updateVideos(response.data);
-    });
-  }
+  // componentDidUpdate () {
+  //   axios
+  //   .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+  //   .then((response) => {
+  //     this.updateVideos(response.data);
+  //   });
+  // }
 
 render () {
 return (
@@ -59,9 +61,9 @@ return (
       </div> */}
 
         
-      {/* <div className="video__main">  
+      <div className="video__main">  
         <MainVideo video={this.state.mainVideoData}/>
-      </div> */}
+      </div>
 
      <div className="container">
         <div>

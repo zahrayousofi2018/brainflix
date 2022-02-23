@@ -49,7 +49,7 @@ export const API_URL ="https://project-2-api.herokuapp.com/videos";
        <Navbar/>
        <Switch>
          <Route path="/" exact>
-           <Home video={this.state.mainVideoData} />
+           <Home/>
         </Route>
        <Route path= "/Uploads" component ={Uploads}/>
        </Switch>

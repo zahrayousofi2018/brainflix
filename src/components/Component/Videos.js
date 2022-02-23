@@ -9,6 +9,7 @@ export default function NextVideos (props) {
         <section className ="next__videos">
             <h2 className="Next__Videos__Heading">NEXT VIDEOS</h2>
             {props.nextVideos.map((element, index)=> {
+                // if element.id= this.props.nextVideos{ }
                 return <Videos video={element} key={'video' + index}  clickhandler = {props.clickhandler}/>;
 
 
