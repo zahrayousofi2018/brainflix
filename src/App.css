@@ -47,17 +47,53 @@
 }
 .heading {
   font-style: italic;
-  background-color: lightpink;
-  padding-left: 19px;
   font-style: Avenir;
 }
-@media (min-width: 480px) {
-  .heading {
-    font-size: 14px;
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
   }
 }
-@media (min-width: 768px) {
-  .heading {
-    font-size: 14px;
+
+.comment__section {
+  position: relative;
+  padding-left: 63px;
+  font-style: Avenir;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .comment__section {
+    width: 100vw;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.description {
+  padding-left: 63px;
+  font-style: Avenir;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .description {
+    width: 90vw;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.NewComments {
+  padding-left: 63px;
+  padding-right: 63%;
+  font-style: Avenir;
+}
+
+.videos {
+  padding-right: 63px;
+}
+
+@media (min-width: 1280px) {
+  .Navbar {
+    padding-left: 63px;
+    padding-right: 63px;
   }
 }/*# sourceMappingURL=App.css.map */

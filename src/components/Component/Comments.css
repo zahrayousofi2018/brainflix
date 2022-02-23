@@ -1,0 +1,39 @@
+.heading {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.grey__image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.line__break {
+  color: lightgray;
+}
+
+.comment__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.comment__date {
+  color: gray;
+}
+.comment__heading__lastName {
+  padding-right: 500px;
+}
+.comment__heading__fastName {
+  padding-right: 20px;
+}
+
+.comment {
+  font-size: 14px;
+  padding-left: 50px;
+  padding-bottom: 24px;
+  padding-top: 16px;
+}/*# sourceMappingURL=Comments.css.map */

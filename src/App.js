@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 // import Comments from './components/Component/Comments'
 // import NextVideos from './components/Component/Videos'
 import './App.scss';
@@ -10,15 +9,12 @@ import Navbar from './components/Component/Navbar'
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./components/Component/Home";
 import Uploads from "./components/Component/Uploads";
-import {Link} from 'react-router-dom'
 
 
-
-export const API_URL ="https://project-2-api.herokuapp.com";
-const myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
+export const API_URL ="https://project-2-api.herokuapp.com/videos";
 
   class App extends Component {
-    constructor() {
+    constructor() {                     
       super();
       this.state = {
              mainVideoData: [
@@ -39,8 +35,6 @@ const myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
   
   render() {
     
-
-
   // const customerComments =  [
   //   {firstName: "Michael", lastName: "Lyons", comment: "They BLEW the ROOF off at their last event, once everyone started figuring out they were going. This is still simply the greatest opening of an event I have EVER witnessed.", date: "08/09/2021"},
 
@@ -52,7 +46,6 @@ const myApiKey = ("8d6ce8f8-924a-4f80-bc0a-5cd301d742a7");
   return (
        <div>
        <BrowserRouter>
-       {/* <Link to ="/">Home</Link> */}
        <Navbar/>
        <Switch>
          <Route path="/" exact>

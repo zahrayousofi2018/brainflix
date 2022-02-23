@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
 import './MainVideo.scss'
 import './Videos'
+import axios from "axios";
 
 
 class MainVideo extends Component {
+   
+    state = {
+    mainVideoData: [],
+    };
+
+    updateVideos(array){
+    this.setState({
+      nextVideoData: array,
+    });
+}
+  
+ 
+  componentDidMount() {
+     axios
+     .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+     .then((response) => {
+       console.log(response.data[0])
+       this.updateVideos(response.data);
+     
+   }
+   );
+  }
+
+  componentDidUpdate () {
+    axios
+    .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+    .then((response) => {
+      this.updateVideos(response.data);
+    });
+  }
+
+
+
   
 
 render() {

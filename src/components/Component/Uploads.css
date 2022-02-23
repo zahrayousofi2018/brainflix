@@ -1,0 +1,233 @@
+.Uploads__image {
+  border-radius: 8px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .Uploads__image {
+    margin-left: 16px;
+    width: 80vw;
+    height: 40vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .Uploads__image {
+    width: 50vw;
+    height: 30vh;
+    margin-left: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .Uploads__image {
+    margin-left: 63px;
+    width: 40vw;
+    height: 35vh;
+  }
+}
+
+.Uploads__video {
+  border-radius: 8px;
+  width: 200px;
+  height: 300px;
+  font-family: Avenir;
+}
+.cancel__button__one {
+  border-radius: 8px;
+  color: #0095FF;
+  font-weight: bold;
+  background-color: white;
+  border-color: white;
+  width: 150px;
+  height: 35px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .cancel__button__one {
+    display: none;
+  }
+}
+.cancel__button__two {
+  border-radius: 8px;
+  color: #0095FF;
+  font-weight: bold;
+  background-color: white;
+  border-color: white;
+  width: 150px;
+  height: 35px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .cancel__button__two {
+    width: 80vw;
+    height: 10vh;
+    margin-left: 16px;
+    margin-bottom: 26px;
+    outline: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .cancel__button__two {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .cancel__button__two {
+    display: none;
+  }
+}
+
+.publish__button {
+  border-radius: 8px;
+  background-color: #0095FF;
+  color: white;
+  font-weight: bold;
+  border-color: #0095FF;
+  width: 150px;
+  height: 35px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .publish__button {
+    width: 80vw;
+    height: 10vh;
+    margin-left: 16px;
+    margin-bottom: 26px;
+  }
+}
+.uploads__label {
+  color: lightGray;
+  font-weight: bold;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .uploads__label {
+    padding-left: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .uploads__label {
+    margin-left: 36px;
+  }
+}
+.uploads__label__title {
+  color: lightgrey;
+  font-weight: bold;
+  font-family: Avenir;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .uploads__label__title {
+    width: 80vw;
+    height: 10vh;
+    padding-left: 16px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .uploads__label__title {
+    margin-left: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .uploads__label__title {
+    margin-left: 63px;
+  }
+}
+
+.uploads__label__description {
+  color: lightgrey;
+  font-weight: bold;
+  font-family: Avenir;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .uploads__label__description {
+    width: 80vw;
+    height: 10vh;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .uploads__label__description {
+    margin-left: 36px;
+    width: 80vw;
+    height: 10vh;
+  }
+}
+.uploads__comment__box {
+  border-radius: 8px;
+  background-color: #FAFAFA;
+  border-color: lightgrey;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .uploads__comment__box {
+    height: 8vh;
+    width: 80vw;
+    margin-left: 16px;
+    padding-right: 16px;
+    background-color: #FAFAFA;
+    border-color: lightgrey;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .uploads__comment__box {
+    margin-left: 36px;
+    height: 8vh;
+    width: 80vw;
+  }
+}
+@media (min-width: 1280px) {
+  .uploads__comment__box {
+    margin-left: 63px;
+  }
+}
+
+.uploads__comment__box__description {
+  border-radius: 8px;
+  background-color: #FAFAFA;
+  border-color: lightgrey;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .uploads__comment__box__description {
+    height: 20vh;
+    width: 70vw;
+    margin-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .uploads__comment__box__description {
+    margin-left: 36px;
+    height: 20vh;
+    width: 70vw;
+  }
+}
+@media (min-width: 1280px) {
+  .uploads__comment__box__description {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .heading__text {
+    padding-left: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .heading__text {
+    margin-left: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .heading__text {
+    margin-left: 63px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form {
+    margin-left: 63px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .uploads__desktop__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=Uploads.css.map */

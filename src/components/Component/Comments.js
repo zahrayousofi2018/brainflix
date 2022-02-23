@@ -1,5 +1,6 @@
 import React from 'react';
 import './Comments.scss';
+// import React, {Component} from 'react';
 
   
   const Comments = props => {
@@ -26,3 +27,20 @@ import './Comments.scss';
 
 
 export default Comments;
+
+// class Comment extends Component {
+  
+//   render() {
+//     const {name, comment, likes } = this.props;
+//     return (
+//        <div>
+//          <p>{name}</p>
+//          <p>{comment}</p>
+//          <p>{likes}</p>
+//        </div>
+
+//     );
+//   }
+// }
+
+// export default Comment;

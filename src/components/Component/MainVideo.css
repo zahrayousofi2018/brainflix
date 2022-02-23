@@ -1,0 +1,78 @@
+.main__video__container {
+  background-color: black;
+  width: 100vw;
+  height: 70vh;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main__video__container {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main__video__container {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+.main__video__image {
+  width: 80vw;
+  height: 70vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main__video__image {
+    width: 90vw;
+    height: 60vh;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main__video__image {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+.main__video__text__container {
+  padding-left: 16px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main__video__text__container {
+    padding-top: 16px;
+  }
+}
+
+.main__video__header {
+  padding-top: 24px;
+}
+
+.play__icon {
+  position: absolute;
+  top: 630px;
+  left: 160px;
+}
+
+.full__screen {
+  position: absolute;
+  top: 630px;
+  left: 1060px;
+}
+
+.volume__up {
+  position: absolute;
+  top: 630px;
+  left: 1090px;
+}
+
+.pause__icon {
+  position: absolute;
+  top: 630px;
+  left: 1020px;
+}/*# sourceMappingURL=MainVideo.css.map */
