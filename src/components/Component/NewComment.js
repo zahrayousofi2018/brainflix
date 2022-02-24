@@ -36,32 +36,5 @@ import './NewComment.scss'
   export default NewComment;
 
 
-// class NewComment extends Component {
-//   likePoster(id) {
-//     axios.put (
-//       API_URL + "/" + id + "like?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3"
-//     );
-//   }
 
-//   render() {
-//     return (
-//       <div> 
-//         {this.props.comments.map((comment) => {
-//           return (
-//             <Comment 
-//             key={comment.id}
-//             name={comment.name}
-//             comment={comment.comment}
-//             likes={comment.likes}
-//             id={comment.id}
-//             clickHandler={this.likePoster}
-//             />
-//           );
-//         })}
-//       </div>
-//     );
-//   }
-// }
-
-// export default NewComment
 
