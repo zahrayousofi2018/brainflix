@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './MainVideo.scss'
 import './Videos'
+import Comments from './Comments'
 // import axios from "axios";
 
 
@@ -13,7 +14,8 @@ render() {
 
     return (
         <section className="MainVideo">
-             <Main video={this.props.video}></Main>
+             <Main video={this.props.video}/>
+             {/* <Comments video={this.props.video}/> */}
         </section >
       )
       }}

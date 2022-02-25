@@ -17,17 +17,17 @@ import './Comments.scss';
 // }
   
  
-//   componentDidMount() {
-//      axios
-//      .get("https://project-2-api.herokuapp.com?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
-//      .then((response) => {
-//        console.log(response)
-//        this.updateVideos(response.data.comments);
+  // componentDidMount() {
+  //    axios
+  //    .get(`https://project-2-api.herokuapp.com/videos/${props.video.id}/?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3`)
+  //    .then((response) => {
+  //      console.log(response)
+  //      this.updateVideos(response.data.comments);
      
-//    }
-//    );
-//   };
-// }
+  //  }
+  //  );
+  // };
+
 
 
 // render() {

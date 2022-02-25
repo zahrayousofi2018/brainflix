@@ -9,20 +9,31 @@ import MainVideo from './MainVideo'
 import NewComment from './NewComment'
 
 
-export const API_URL= "https://project-2-api.herokuapp.com/videos";
+// export const API_URL= "https://project-2-api.herokuapp.com/videos";
+// const API_KEY= "74bc90a5-a15b-42e3-b65e-1c82a08e64d3"
 
   class Home extends Component {
     state = {
     nextVideoData: [],
     mainVideoData: {},
+    customerComments: [],
     };
 
+  
     updateVideos(videoArray){
     this.setState({
       nextVideoData: videoArray,
       mainVideoData: videoArray[0],
     });
 }
+
+ clickhandler(newVal){
+      console.log(newVal)
+      this.setState({
+        mainVideoData: newVal
+      })
+    }
+
   
  
   componentDidMount() {
@@ -31,14 +42,67 @@ export const API_URL= "https://project-2-api.herokuapp.com/videos";
      .then((response) => {
        console.log(response)
        this.updateVideos(response.data);
-     
    }
    );
   }
 
- 
+    // updateComments (commentArray) {
+    //   this.setState({
+    //     customerComments: commentArray,
+    //   })
+    // }
+
+  // componentDidMount () {
+  //   axios
+  //   .get("https://project-2-api.herokuapp.com?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+  //   .then((response)) => {
+  //     console.log(response)
+  //     this.updateComments(response.data);
+  //   };
+  // }
+
+//   fetchMainVideoData =(id) => {
+//   axios.get (
+//     'https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3'
+//   )
+//   .then((data) => {
+//     this.setState ({
+//       mainVideoData: data.data,
+//     });
+//   });
+// }
+
+// componentDidUpdate () {
+  //   this.updateVideos();
+  //   if (
+  //     this.props.match?.params &&
+  //     this.props.match?.params.id !== this.state?.mainVideoData?.id
+  //   )
+  //   {
+  //     this.fetchMainVideoData(this.props.match.params.id);
+  //   }
+
+  // }
+
+   
+  
 
 render () {
+  // console.log(this.state.mainVideoData)
+          let filteredVideoData = this.state.nextVideoData  
+         if (
+            this.state.nextVideoData.length > 0 
+            
+          ) {
+              filteredVideoData = this.state.nextVideoData.filter((video) => {
+                return (
+                  video.id !== this.state.mainVideoData.id
+                )
+             
+                
+             } )
+          }
+             console.log(filteredVideoData)
 return (
 
    <div className = "App">
@@ -46,11 +110,6 @@ return (
         {/* <Navbar/> */}
       </div>
 
-
-      {/* <div>
-        <h1 className="header">Comments</h1>
-        <NewComment comments={this.state.comments} />
-      </div> */}
 
         
       <div className="video__main">  
@@ -62,6 +121,12 @@ return (
           <div>
           <Description/>
           </div>
+
+          {/* <div>
+        <h1 className="header">Comments</h1>
+        <NewComment comments={this.state.comments} />
+      </div> */}
+
 
           <div>
           <NewComment/>
@@ -78,7 +143,9 @@ return (
        </div> 
      
        <div className="videos">
-          <NextVideos nextVideos= {this.state.nextVideoData} clickhandler={(newVal)=>this.clickhandler(newVal)}/>
+          <NextVideos nextVideos= {filteredVideoData} clickhandler={this.clickhandler}/>
+          
+
            {/* {nextVideosData.map((element, index)=> {
                 return <Videos video={element} key={'video' + index}  clickhandler = {props.clickhandler}/>; */}
 
@@ -110,4 +177,6 @@ return (
  
 
 export default Home;
+
+
 
