@@ -98,7 +98,7 @@ class Uploads extends Component {
          </div>
          </div>
         
-         <div className="">
+         <div className="buttons__uploads__div">
              <Link to="/">
             <button className="cancel__button__one"type="button">CANCEL</button>
               </Link>
