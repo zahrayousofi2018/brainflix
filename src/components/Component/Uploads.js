@@ -1,9 +1,9 @@
+import { useHistory} from 'react-router-dom';
 import React, { Component } from "react";
 import "./Uploads.scss";
 import { Link, Redirect} from "react-router-dom";
 
 
-// function Uploads(props) {
 
 class Uploads extends Component {
      state ={
@@ -44,18 +44,29 @@ class Uploads extends Component {
        if (!this.isdescriptionValid()){
          return false;
        }
-       return true;
+       if (title || description ){
+       return 
+        
+       }
+       return  <Redirect to= {"/"} />;
      };
 
      handleSubmit = (event) => {
        event.preventDefault();
        if(this.isFormValid()) {
-         alert("Success");
+         alert("Thank you for completing the form!")
        } else {
          alert("Please complete the form")
        }
      };
-     
+
+     routeChange = () => {
+       let path = `/`;
+       let history = useHistory();
+       history.push(path);
+     }
+
+   
 
   render () {
 
@@ -88,9 +99,13 @@ class Uploads extends Component {
          </div>
         
          <div className="">
+             <Link to="/">
             <button className="cancel__button__one"type="button">CANCEL</button>
+              </Link>
             <button type="submit" className="publish__button">PUBLISH</button>
+             <Link to="/">
             <button className="cancel__button__two"type="button">CANCEL</button>
+            </Link>
          </div>
          </form>
      </div>

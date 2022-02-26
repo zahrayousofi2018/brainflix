@@ -9,25 +9,7 @@ import Uploads from "./components/Component/Uploads";
 export const API_URL ="https://project-2-api.herokuapp.com/videos";
 
   class App extends Component {
-    // constructor() {                     
-    //   super();
-    //   this.state = {
-    //          mainVideoData: [
-    //     {"id":"84e96018-4022-434e-80bf-000ce4cd12b8",
-    //     "title":"BMX Rampage: 2021 Highlights",
-    //     "channel":"Red Cow",
-    //     "image":"https://i.imgur.com/l2Xfgpl.jpg"},
-    //     ]
-    //   }
-    // }
-    // clickhandler(newVal){
-    //   console.log(newVal)
-
-    //   this.setState({
-    //     mainVideoData: [newVal]
-    //   })
-    // }
-  
+ 
   render() {
     
   return (
