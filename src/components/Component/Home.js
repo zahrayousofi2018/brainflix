@@ -1,16 +1,11 @@
-// import React from "react";
 import React, { Component } from "react";
 import axios from "axios";
 import Comments from './Comments'
 import NextVideos from './Videos'
 import Description from './Description'
-// import Navbar from './Navbar'
 import MainVideo from './MainVideo'
 import NewComment from './NewComment'
 
-
-// export const API_URL= "https://project-2-api.herokuapp.com/videos";
-// const API_KEY= "74bc90a5-a15b-42e3-b65e-1c82a08e64d3"
 
   class Home extends Component {
     state = {
@@ -34,8 +29,6 @@ import NewComment from './NewComment'
       })
     }
 
-  
- 
   componentDidMount() {
      axios
      .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
@@ -63,7 +56,7 @@ import NewComment from './NewComment'
 
 //   fetchMainVideoData =(id) => {
 //   axios.get (
-//     'https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3'
+//     `https://project-2-api.herokuapp.com/videos?${id}api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3`
 //   )
 //   .then((data) => {
 //     this.setState ({
@@ -73,22 +66,19 @@ import NewComment from './NewComment'
 // }
 
 // componentDidUpdate () {
-  //   this.updateVideos();
-  //   if (
-  //     this.props.match?.params &&
-  //     this.props.match?.params.id !== this.state?.mainVideoData?.id
-  //   )
-  //   {
-  //     this.fetchMainVideoData(this.props.match.params.id);
-  //   }
+//     this.updateVideos();
+//     if (
+//       this.props.match?.params &&
+//       this.props.match?.params.id !== this.state?.mainVideoData?.id
+//     )
+//     {
+//       this.fetchMainVideoData(this.props.match.params.id);
+//     }
 
-  // }
+//   }
 
-   
-  
 
 render () {
-  // console.log(this.state.mainVideoData)
           let filteredVideoData = this.state.nextVideoData  
          if (
             this.state.nextVideoData.length > 0 
@@ -109,8 +99,6 @@ return (
       <div className="Navbar">
         {/* <Navbar/> */}
       </div>
-
-
         
       <div className="video__main">  
         <MainVideo video={this.state.mainVideoData}/>
@@ -144,12 +132,6 @@ return (
      
        <div className="videos">
           <NextVideos nextVideos= {filteredVideoData} clickhandler={this.clickhandler}/>
-          
-
-           {/* {nextVideosData.map((element, index)=> {
-                return <Videos video={element} key={'video' + index}  clickhandler = {props.clickhandler}/>; */}
-
-         {/* {this.state.nextVideoData.map(nextVideo => <h3 key={nextVideo.id}>{nextVideo.title}{nextVideo.channel}{nextVideo.image}</h3>)} */}
        </div>  
 
       </div>
@@ -167,14 +149,7 @@ return (
     {firstName: "Theodore", lastName: "Duncan", comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He's definitly my favorite ever!", date: "07/11/2021"},
   ];
 
-    axios
-    .get("https://project-2-api.herokuapp.com/videos/:id?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
-    .then((response) => {
-      console.log(response.data.comments)
-    });
 
-
- 
 
 export default Home;
 

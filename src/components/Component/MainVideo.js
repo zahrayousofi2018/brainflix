@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import './MainVideo.scss'
 import './Videos'
-import Comments from './Comments'
+// import Comments from './Comments'
 // import axios from "axios";
-
 
 class MainVideo extends Component {
    
-
 render() {
-
-    console.log(this.props)
 
     return (
         <section className="MainVideo">
              <Main video={this.props.video}/>
-             {/* <Comments video={this.props.video}/> */}
+             {/* <Comments video={this.props.comments}/> */}
         </section >
       )
       }}
@@ -24,7 +20,7 @@ render() {
 export default MainVideo
 
     function Main(props) {
-        // const [video] = props.video
+        
        
         return (
            <div className= "main__video__container">
