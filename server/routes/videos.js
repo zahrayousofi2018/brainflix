@@ -9,15 +9,34 @@ function readVideos () {
     return parsedData;
 }
 
-router.get("/", (_, res)=> {
-    res.json(readVideos());
+router
+.get("/videos", (_, res)=> {
+    res.json(data);
 });
 
-router.get("/:videoId", (req, res)=> {
+router
+   .route("/videos/:videoID")
+   .get((req, res) => {
+       fs.readFile('./video.json', 'utf8')
+           
+       
+       let id = req.params.id;
+       let singlevideo = data.find((video)=> video.id === id);
+       res.send(singlevideo);
+   })
+
+router.get("/:id", (req, res)=> {
     const videos = readVideos();
-    const singleVideo = videos.find(video => video.id === req.params.nodeId);
+    const singleVideo = videos.find(video => video.id === req.params.videoId);
     res.json(singleVideo)
 })
+
+// router
+//    .post('/videos', (req, res)=> {
+//     let body = req.body;
+//     console.log(body);
+// });
+
 
 
 
