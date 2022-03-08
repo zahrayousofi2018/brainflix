@@ -13,6 +13,7 @@
     top: 0;
     left:0;
     overflow: hidden;
+   
 
     @media (min-width: 768px) and (max-width: 1279px) {
         
@@ -29,12 +30,31 @@
 }
 
 .upload {
-    position: absolute;
-    top: 63px;
-    left: 1020px;
+    @media (min-width: 480px) and (max-width:767px) {
+       position: relative;
+       right: 250px;
+       width: 2.2rem;
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+       position: relative;
+       right:90px;
+    //    width: 1.5rem;
+        
+    }
+
+    // position: absolute;
+    // top: 63px;
+    // left: 1020px;
+    @media(min-width: 1280px){
+        position: relative;
+        right: 85px;
+
+    }
+
 }
 
 .navbar__nav {
+    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -141,21 +161,23 @@
 }
 
 .search__icon {
-
    @media(min-width: 1280px){
-   padding-top: 26px;
-   padding-left:5px;
+   right: 445px;
+   top:45px;
    position: absolute;
    }
    @media (min-width: 768px) and (max-width: 1279px) {
+   position: absolute;
+   right: 480px;
+   top:45px;
           
 }
 
     @media (min-width: 480px) and (max-width:767px) {
-    width: 6vw; 
-    padding-right: 10px; 
-    padding-top: 1px;
-    margin-bottom: 5px; 
+   position: absolute;
+   right: 580px;
+   top: 220px;
+   width:1.9rem;
 }
 
 }

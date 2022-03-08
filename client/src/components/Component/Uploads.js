@@ -2,7 +2,7 @@ import { useHistory} from 'react-router-dom';
 import React, { Component } from "react";
 import "./Uploads.scss";
 import { Link, Redirect} from "react-router-dom";
-
+import axios from "axios"
 
 
 class Uploads extends Component {
@@ -66,12 +66,20 @@ class Uploads extends Component {
        history.push(path);
      }
 
+     handleUpload =(e)=> {
+       e.preventDefault()
+       axios.post('http://localhost:9000/videos', {
+         title: this.state.title,
+         description: this.state.description})
+     
+    };
+
    
 
   render () {
 
    return(
-    <div>
+    <div class="div">
       <form onSubmit= {this.handleSubmit}>
            <div>
              <hr></hr>
@@ -103,6 +111,7 @@ class Uploads extends Component {
             <button className="cancel__button__one"type="button">CANCEL</button>
               </Link>
             <button type="submit" className="publish__button">PUBLISH</button>
+            <img className="publish__icon" src="Icons/publish.svg" alt="publish__icon"></img>
              <Link to="/">
             <button className="cancel__button__two"type="button">CANCEL</button>
             </Link>

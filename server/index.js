@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 9000;
 app.use('/videos', videos);
 // //use the videos.js file to handle endpoints that start with /videos
 
-
+// app.use('/videoDetails', videos);
 
 // app.get('/videos', (_req, res)=> {
 //     res.json(data)
@@ -63,7 +63,7 @@ app.get('/', (_req, res) => {
 
 app.use('/static', express.static('files'));
 
-// app.use('/videoDetails', videos);
+
 
 
 // Start the server
