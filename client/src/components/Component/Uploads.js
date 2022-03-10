@@ -70,8 +70,10 @@ class Uploads extends Component {
        e.preventDefault()
        axios.post('http://localhost:9000/videos', {
          title: this.state.title,
-         description: this.state.description})
-     
+         description: this.state.description,
+         imageSrc: './public/Images/Mohan-muruge.jpg',
+        });
+        
     };
 
    

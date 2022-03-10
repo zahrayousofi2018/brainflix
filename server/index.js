@@ -45,12 +45,13 @@ app.use('/videos', videos);
 //     res.status(201).send('hi')
 // })
   
+const newVideo = []
 
   app.post('/videos', (req, res)=> {
     let body = req.body;
-    console.log(body);
-    let maxid = data.reduce(
-        (acc, curr) => (curr.id >= acc ? curr.id : acc), 0);
+    // console.log(body);
+    // let maxid = data.reduce(
+    //     (acc, curr) => (curr.id >= acc ? curr.id : acc), 0);
     let newid = maxid +1;
     let newVideo = {id: newid, ...body };
     data.push(newVideo);
@@ -63,6 +64,15 @@ app.get('/', (_req, res) => {
 
 app.use('/static', express.static('files'));
 
+app.get("/videos", (_, res)=> {
+    res.json(data);
+});
+
+app.get("/video/:id",(req, res) => {
+       let id = req.params.id;
+       let singlevideo = data.find((video)=> video.id === id);
+       res.send(singlevideo);
+   })
 
 
 

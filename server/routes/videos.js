@@ -1,7 +1,7 @@
 const express = require ("express");
 const router = express.Router();
 const fs = require("fs");
-
+const data = require('../data/videos.json')
 
 function readVideos () {
     const videosData = fs.readFileSync("./data/videos.json");
@@ -15,11 +15,8 @@ router
 });
 
 router
-   .route("/videos/:videoID")
+   .route("/video/:id")
    .get((req, res) => {
-       fs.readFile('./video.json', 'utf8')
-           
-       
        let id = req.params.id;
        let singlevideo = data.find((video)=> video.id === id);
        res.send(singlevideo);
