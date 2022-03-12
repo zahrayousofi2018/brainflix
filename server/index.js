@@ -4,6 +4,8 @@ const app = express();
 const cors = require('cors');
 const videos = require('./routes/videos')
 const data = require('./data/videos.json')
+const fs = require("fs");
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -16,6 +18,8 @@ app.use((req, res, next) => {
     next();
 });
 
+// var videoData = JSON.parse(data)
+// console.log(videoData)
 
 require('dotenv').config();
 const PORT = process.env.PORT || 9000;
@@ -47,14 +51,18 @@ app.use('/videos', videos);
   
 const newVideo = []
 
-  app.post('/videos', (req, res)=> {
+  app.post('/videos', (req, res)=> {   
     let body = req.body;
-    // console.log(body);
-    // let maxid = data.reduce(
-    //     (acc, curr) => (curr.id >= acc ? curr.id : acc), 0);
-    let newid = maxid +1;
-    let newVideo = {id: newid, ...body };
+    
+    let newVideo = {id: data.length + 1, ...body };
     data.push(newVideo);
+    var videoSrc = JSON.stringify(data)
+    fs.writeFile('./data/videos.json', videoSrc, 'utf8', function(err) {
+    if (err) throw err;
+    console.log('complete');
+    })
+    // JSON.stringify(data)
+   res.status(200).send(req.body)
 
 });
 

@@ -31,7 +31,8 @@ import NewComment from './NewComment'
 
   componentDidMount() {
      axios
-     .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+    //  .get("https://project-2-api.herokuapp.com/videos?api_key=74bc90a5-a15b-42e3-b65e-1c82a08e64d3")
+    .get("http://localhost:9000/videos")
      .then((response) => {
        console.log(response)
        this.updateVideos(response.data);

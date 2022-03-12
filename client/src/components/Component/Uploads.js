@@ -17,7 +17,7 @@ class Uploads extends Component {
     
      istitleValid = () => {
        const title = this.state.title;
-       if (title.length < 8 ) {
+       if (title.length < 5 ) {
          return false;
        }
        return true;
@@ -25,7 +25,7 @@ class Uploads extends Component {
 
      isdescriptionValid = () => {
        const description = this.state.description;
-       if(description.length < 8) {
+       if(description.length < 5) {
          return false;
        }
        return true;
@@ -53,11 +53,12 @@ class Uploads extends Component {
 
      handleSubmit = (event) => {
        event.preventDefault();
-       if(this.isFormValid()) {
-         alert("Thank you for completing the form!")
-       } else {
-         alert("Please complete the form")
-       }
+      //  if(this.isFormValid()) {
+      //    alert("Thank you for completing the form!")
+      //  } else {
+      //    alert("Please complete the form")
+      //  }
+      console.log("Hi", event)
      };
 
      routeChange = () => {
@@ -71,7 +72,7 @@ class Uploads extends Component {
        axios.post('http://localhost:9000/videos', {
          title: this.state.title,
          description: this.state.description,
-         imageSrc: './public/Images/Mohan-muruge.jpg',
+         imageSrc: './public/images/image0.jpeg',
         });
         
     };
@@ -82,7 +83,7 @@ class Uploads extends Component {
 
    return(
     <div class="div">
-      <form onSubmit= {this.handleSubmit}>
+      <form method="POST" onSubmit= {this.handleSubmit}>
            <div>
              <hr></hr>
              <h1 className="heading__text">Upload Video</h1>  
@@ -94,6 +95,7 @@ class Uploads extends Component {
               <label className="uploads__label">VIDEO THUMBNAIL</label>
               <img src="Images/Upload-video-preview.jpg" alt="Uploads__Image"className="Uploads__image"/>
             </div>
+
 
           <div>
            <div>
