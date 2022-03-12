@@ -53,6 +53,9 @@ class Uploads extends Component {
 
      handleSubmit = (event) => {
        event.preventDefault();
+       this.setState({
+         title: event.target.title.value,
+       })
       //  if(this.isFormValid()) {
       //    alert("Thank you for completing the form!")
       //  } else {
@@ -86,10 +89,11 @@ class Uploads extends Component {
    
 
   render () {
-
+console.log(this.state.title)
+console.log(this.state.description)
    return(
     <div class="div">
-      <form method="POST" onSubmit= {this.handleSubmit} >
+      <form method="POST" onSubmit= {(e)=> this.handleSubmit(e)} >
            <div>
              <hr></hr>
              <h1 className="heading__text">Upload Video</h1>  
