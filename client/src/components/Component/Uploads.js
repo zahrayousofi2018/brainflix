@@ -72,18 +72,24 @@ class Uploads extends Component {
        axios.post('http://localhost:9000/videos', {
          title: this.state.title,
          description: this.state.description,
-         imageSrc: './public/images/image0.jpeg',
+         imageSrc: 'http://localhost:9000/static/imagesFile/image0.jpeg',
         });
         
     };
+/*
+1. get all the form information and print it
+2. call axios with the data 
 
+
+
+*/
    
 
   render () {
 
    return(
     <div class="div">
-      <form method="POST" onSubmit= {this.handleSubmit}>
+      <form method="POST" onSubmit= {this.handleSubmit} >
            <div>
              <hr></hr>
              <h1 className="heading__text">Upload Video</h1>  
