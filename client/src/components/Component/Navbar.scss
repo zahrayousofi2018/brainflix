@@ -1,8 +1,11 @@
 .navbar__button {
     color: white;
     background-color: #0095FF;
-    width:150px;
-    height:35px;
+    width:180px;
+    // height:40px;
+    // width: 125px;
+    // height: 20px;
+
     font-weight: bold;
     font-family: Avenir;
     border-radius: 6px;
@@ -12,11 +15,20 @@
     position: relative;
     top: 0;
     left:0;
-    overflow: hidden;
-   
+    // overflow: hidden;
+
+    @media (min-width:1280px) {
+        padding-left: 40px;
+        padding-bottom: 10px;
+        font-size: 0.8rem;
+       
+    }
+
 
     @media (min-width: 768px) and (max-width: 1279px) {
-        
+        padding-left: 40px;
+        padding-bottom: 10px;
+        font-size: 0.8rem;
 
        
     }
@@ -47,13 +59,19 @@
     // left: 1020px;
     @media(min-width: 1280px){
         position: relative;
-        right: 85px;
+        right: 95px;
+        top: 5px;
 
     }
 
 }
 
 .navbar__nav {
+
+     @media (min-width: 1280px)  {
+         margin-right: 63px;
+         margin-left: 63px;
+     }
     background-color: aquamarine;
     display: flex;
     justify-content: space-between;
@@ -62,8 +80,10 @@
     font-size: 33px;
     padding-top: 20px;
     @media (min-width: 768px) and (max-width: 1279px) {
-        padding-right: 36px;
-        padding-left: 36px;
+        // padding-right: 36px;
+        // padding-left: 36px;
+        margin-right: 36px;
+        margin-left: 36px;
     }
      
        @media (min-width: 480px) and (max-width:767px) {
@@ -73,6 +93,7 @@
         padding-top: 16px;
      
     }
+
 }
 
 .BrainFlix__logo {
@@ -162,21 +183,23 @@
 
 .search__icon {
    @media(min-width: 1280px){
-   right: 445px;
+   right: 533px;
    top:45px;
    position: absolute;
    }
+
    @media (min-width: 768px) and (max-width: 1279px) {
    position: absolute;
-   right: 480px;
+   right: 510px;
    top:45px;
           
-}
+   }
 
-    @media (min-width: 480px) and (max-width:767px) {
+   @media (min-width: 480px) and (max-width:767px) {
    position: absolute;
-   right: 580px;
-   top: 220px;
+//    right: 680px;
+   top: 260px;
+   right: 600px;
    width:1.9rem;
 }
 
