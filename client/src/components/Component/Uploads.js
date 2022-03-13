@@ -1,4 +1,4 @@
-import { useHistory} from 'react-router-dom';
+// import { useHistory} from 'react-router-dom';
 import React, { Component } from "react";
 import "./Uploads.scss";
 import { Link, Redirect} from "react-router-dom";
@@ -9,6 +9,7 @@ class Uploads extends Component {
      state ={
        title: "",
        description: "",
+       image:"",
      }
    handleChange = (event) => {
      this.setState({[event.target.name]: event.target.value},
@@ -51,24 +52,24 @@ class Uploads extends Component {
        return  <Redirect to= {"/"} />;
      };
 
-     handleSubmit = (event) => {
-       event.preventDefault();
-       this.setState({
-         title: event.target.title.value,
-       })
-      //  if(this.isFormValid()) {
-      //    alert("Thank you for completing the form!")
-      //  } else {
-      //    alert("Please complete the form")
-      //  }
-      console.log("Hi", event)
-     };
+    //  handleSubmit = (event) => {
+    //    event.preventDefault();
+    //    this.setState({
+    //      title: event.target.title.value,
+    //    })
+    //   //  if(this.isFormValid()) {
+    //   //    alert("Thank you for completing the form!")
+    //   //  } else {
+    //   //    alert("Please complete the form")
+    //   //  }
+    //   console.log("Hi", event)
+    //  };
 
-     routeChange = () => {
-       let path = `/`;
-       let history = useHistory();
-       history.push(path);
-     }
+    //  routeChange = () => {
+    //    let path = `/`;
+    //    let history = useHistory();
+    //    history.push(path);
+    //  }
 
      handleUpload =(e)=> {
        e.preventDefault()
@@ -88,12 +89,14 @@ class Uploads extends Component {
 */
    
 
-  render () {
+render () {
 console.log(this.state.title)
 console.log(this.state.description)
    return(
     <div class="div">
-      <form method="POST" onSubmit= {(e)=> this.handleSubmit(e)} >
+      {/* <form method="POST" onSubmit= {(e)=> this.handleSubmit(e)} > */}
+        <form method="POST" onSubmit= {(e)=> this.handleUpload(e)} >
+
            <div>
              <hr></hr>
              <h1 className="heading__text">Upload Video</h1>  
@@ -124,7 +127,7 @@ console.log(this.state.description)
              <Link to="/">
             <button className="cancel__button__one"type="button">CANCEL</button>
               </Link>
-            <button type="submit" className="publish__button">PUBLISH</button>
+            <button  value={this.state.image} onChange={this.handleChange} type="submit" className="publish__button">PUBLISH</button>
             <img className="publish__icon" src="Icons/publish.svg" alt="publish__icon"></img>
              <Link to="/">
             <button className="cancel__button__two"type="button">CANCEL</button>

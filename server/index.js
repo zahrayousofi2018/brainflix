@@ -47,10 +47,7 @@ app.use('/videos', videos);
         
 //     });
 
-// app.post('/', function (req, res) {
-//     console.log(req.body);
-//     res.status(201).send('hi')
-// })
+
   
 const newVideo = []
 
