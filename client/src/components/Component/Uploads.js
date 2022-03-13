@@ -18,7 +18,7 @@ class Uploads extends Component {
     
      istitleValid = () => {
        const title = this.state.title;
-       if (title.length < 5 ) {
+       if (title.length < 2 ) {
          return false;
        }
        return true;
@@ -26,7 +26,7 @@ class Uploads extends Component {
 
      isdescriptionValid = () => {
        const description = this.state.description;
-       if(description.length < 5) {
+       if(description.length < 2) {
          return false;
        }
        return true;
@@ -77,6 +77,7 @@ class Uploads extends Component {
          title: this.state.title,
          description: this.state.description,
          imageSrc: 'http://localhost:9000/static/imagesFile/image0.jpeg',
+        //  imageSrc: './photo.jpeg',
         });
         
     };
