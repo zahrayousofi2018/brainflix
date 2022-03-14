@@ -105,6 +105,7 @@ console.log(this.state.description)
       
         <div className="uploads__desktop__container">
         
+             
              <div class="Uploads__video">
               <label className="uploads__label">VIDEO THUMBNAIL</label>
               <img src="Images/Upload-video-preview.jpg" alt="Uploads__Image"className="Uploads__image"/>
@@ -112,6 +113,7 @@ console.log(this.state.description)
 
 
           <div>
+
            <div>
              <label  className="uploads__label__title">TITLE YOUR VIDEO</label>
              <input value={this.state.title} onChange={this.handleChange} name="title" className="uploads__comment__box" type="text" placeholder= "Add a title to your video..." ></input> 
