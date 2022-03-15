@@ -76,15 +76,12 @@ class Uploads extends Component {
        axios.post('http://localhost:9000/videos', {
          title: this.state.title,
          description: this.state.description,
-         imageSrc: 'http://localhost:9000/static/imagesFile/image0.jpeg',
-        //  imageSrc: './photo.jpeg',
+         image: 'http://localhost:9000/static/imagesFile/image0.jpeg',
         });
         
     };
 /*
 1. get all the form information and print it
-2. call axios with the data 
-
 
 
 */
