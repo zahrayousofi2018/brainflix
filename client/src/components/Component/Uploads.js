@@ -75,7 +75,7 @@ class Uploads extends Component {
        e.preventDefault()
        axios.post('http://localhost:9000/videos', {
          title: this.state.title,
-         description: this.state.description,
+         channel: this.state.description,
          image: 'http://localhost:9000/static/imagesFile/image0.jpeg',
         });
         
